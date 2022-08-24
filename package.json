@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MtendeRoll/social-networkAPI#readme",
   "dependencies": {
+    "datejs": "^1.0.0-rc3",
     "express": "^4.18.1",
     "mongoose": "^6.5.2"
   }
