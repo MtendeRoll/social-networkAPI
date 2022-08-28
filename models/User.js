@@ -29,13 +29,6 @@ const UserSchema = new Schema(
         ref: "User",
       },
     ],
-    // thoughts: {
-    //     _id: [Thought],
-    //   },
-
-    // friends: {
-    //   _id: [User],
-    // },
   },
   {
     toJSON: {
