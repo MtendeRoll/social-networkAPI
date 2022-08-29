@@ -1,4 +1,4 @@
-const { User } = require("../models");
+const { User, Thought } = require("../models");
 
 const userController = {
   // GET all users
@@ -77,7 +77,8 @@ const userController = {
   },
   //   /api/users/:userId/friends/:friendId
   // POST to add a new friend to a user's friend list
-  addFriend({ params, body }, res) {
+  addFriend({ params }, res) {
+    console.log(params);
     User.findOneAndUpdate({ _id: params.userId }, { $push: { friends: params.friendId } }, { new: true, runValidators: true })
       .then((dbUserData) => {
         if (!dbUserData) {
