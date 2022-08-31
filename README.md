@@ -23,8 +23,10 @@ npm i
 Start the application :
 
 ```
-node server.js
+npm start
 ```
+
+Open Insomnia test out routes
 
 ## Application Criteria
 
@@ -41,8 +43,7 @@ GIVEN a social network API:
 
 ## Links
 
-- [Github Repository](https://github.com/MtendeRoll/developing-tech)
-- [Deployed Application](https://developing-tech.herokuapp.com/)
+- [Github Repository](https://github.com/MtendeRoll/social-networkAPI)
 
 ## Tools Used
 
@@ -52,11 +53,16 @@ GIVEN a social network API:
 
 ## Application Gif
 
-- ![Mock-Up]()
+- ![Mock-Up](./assets/gif/social-networkAPI-mockup.gif)
 
 ## Walkthrough Video
 
-- [Link to the Video]()
+- [Part 1](https://drive.google.com/file/d/1vRnLtUzB23hW_0LMY7gGR1Z5f6gLiszz/view)
+  Part 1 shows the GET request for all users, users by Id, all thoughts, thoughts by Id and how to create a user
+- [Part 2](https://drive.google.com/file/d/1akwx1Fv6kdBxnmVSdwcwb925XOnQEAUi/view)
+  Part 2 shows the POST request for thoughts, reactions and friends aswell as a PUT request for users
+- [Part 3](https://drive.google.com/file/d/10dfjLdGVfexT9uJcrbz0dSdqz4b9Z8oo/view)
+  Part 3 shows the DELETE request for thoughts by Id, reactions, friends and users
 
 ## License
 

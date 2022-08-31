@@ -36,14 +36,14 @@ const thoughtController = {
   //     "userId": "5edff358a0fcb779aa7b118b"
   //   }
   createThought({ body }, res) {
-    console.log("-----------------", body);
+    console.log("----------------->", body);
 
     Thought.create(body)
       .then(({ _id }) => {
         return User.findByIdAndUpdate(body.userId, { $push: { thoughts: _id } }, { new: true });
       })
       .then((dbUserData) => {
-        console.log(">>>>dbUserData", dbUserData);
+        console.log("----------------->", dbUserData);
         if (!dbUserData) {
           res.status(404).json({ message: "No User found with this id!" });
           return;
@@ -51,7 +51,7 @@ const thoughtController = {
         res.json(dbUserData);
       })
       .catch((err) => {
-        console.log(">>>>error", err);
+        console.log("--------------------->", err);
         res.status(400).json(err);
       });
   },
